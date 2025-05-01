@@ -1,5 +1,7 @@
 from rest_framework import serializers
 from .models import AnimalBreed, Animal, Device, ActivityReading, EstrusEvent, Alert
+from django.utils import timezone
+
 
 class AnimalBreedSerializer(serializers.ModelSerializer):
     class Meta:
